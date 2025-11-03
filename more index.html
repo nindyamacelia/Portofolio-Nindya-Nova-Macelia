@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nindya Nova Macelia — Portofolio</title>
+  <meta name="description" content="Portofolio Nindya Nova Macelia — Information Systems Student / UIN Jakarta" />
+
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#22c1c3; --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071126 0%, #071833 60%); color:#e6eef6; -webkit-font-smoothing:antialiased; line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:28px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#2dd4bf,#60a5fa);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#06202a;font-size:20px;box-shadow:0 6px 20px rgba(2,6,23,0.6);
+    }
+    nav ul{display:flex;gap:14px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:10px}
+    nav a:hover{color:#fff;background:rgba(255,255,255,0.03)}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr 340px;gap:28px;margin-top:40px;align-items:center}
+    .hero-left h1{font-size:36px;margin:0 0 14px 0}
+    .hero-left p{margin:0;color:var(--muted);max-width:70%}
+    .cta{margin-top:18px;display:flex;gap:10px}
+    .btn{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#012; padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    /* card */
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    .socials{display:flex;gap:10px;margin-top:10px}
+    .socials a{color:var(--muted);text-decoration:none;font-weight:600;font-size:13px}
+
+    /* sections */
+    section{margin-top:28px}
+    h2.section-title{margin:0 0 12px 0;font-size:18px}
+    .about p{color:var(--muted);margin:0}
+
+    /* skills */
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:8px 12px;border-radius:10px;color:var(--muted);font-weight:600;font-size:13px}
+
+    /* projects */
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .project{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.06));padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .project img{width:100%;height:140px;object-fit:cover;border-radius:8px;display:block}
+    .project h3{margin:10px 0 4px 0;font-size:15px}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+
+    /* contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:16px}
+    label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input, textarea{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#eaf5ff}
+    textarea{min-height:120px;resize:vertical}
+    .small-muted{color:var(--muted);font-size:13px}
+
+    footer{margin:36px 0 18px 0;color:var(--muted);font-size:13px;text-align:center}
+
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr; }
+      .hero-left p{max-width:100%}
+      .contact-grid{grid-template-columns:1fr;}
+      nav ul{display:none}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">NN</div>
+        <div>
+          <div style="font-weight:800;font-size:18px">Nindya Nova Macelia</div>
+          <div style="color:var(--muted);font-size:13px">Information Systems Student • UIN Syarif Hidayatullah Jakarta</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h1>Si Social Butterfly,  People  Pleasure, dan Periang!</h1>
+        <p>Halo! Saya Macelia, merupakan mahasiswa aktif Fakultas  Sains dan Teknologi Program Studi Sistem Informasi di UIN Syarif Hidayatullah Jakarta dan bercita-cita menjadi Web Developer. Saya menyukai design antarmuka yang sederhana, dan tata letak rapi.</p>
+
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="card" style="margin-top:18px;">
+          <div style="font-weight:700">Summary</div>
+          <div class="small-muted" style="margin-top:8px">
+            Information Systems Student • Pemula dalam HTML, CSS, JavaScript, C++, Python • Berminat menjadi Frontend Developer
+          </div>
+
+          <div class="socials">
+            <a href="https://github.com/nindyamacelia" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/nindya-nova-macelia-145a21318" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://www.instagram.com/nindyamacelia?igsh=MXNxaGF3Y3VzZzZ4dA==" aria-label="Instagram">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card" style="text-align:center">
+          <img src="nindya nova.jpeg" alt="Foto profil" style="width:100%;height:280px;object-fit:cover;border-radius:10px;margin-bottom:12px">
+          <div style="font-weight:700;font-size:16px">Nindya Nova Macelia</div>
+          <div class="small-muted">Tech Enthusiast</div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <h2 class="section-title">About</h2>
+      <div class="card">
+        <p>Saya Nindya. Tetapi di kampus Saya biasa dikenal dengan Macel. Saya orang yang mudah bergaul, periang, dan mudah tertawa. Selain itu, Saya tertarik dengan pengembangan web front-end. Saya sering membuat dokumen, presentasi, dan prototype sederhana. Saat ini belajar HTML, CSS, dan JavaScript, C++, Python, serta dasar GitHub untuk mempublikasikan proyek. Hobi Saya mengedit video, dan mengulik tentang bagaimana program berjalan.  And I'm a fan of JKT48 ^^</p>
+        <div style="margin-top:12px">
+          <strong class="small-muted">Skill:</strong>
+          <div class="skills" style="margin-top:8px">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">C++</span>
+            <span class="skill">Python</span>
+            <span class="skill">CapCut</span>
+            <span class="skill">AlightMotion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <img src="porto.png" alt="Project demo">
+          <h3>Portofolio Pribadi</h3>
+          <p>Membuat halaman portofolio simple menggunakan HTML dan CSS. Menampilkan profil, skill, dan daftar proyek.</p>
+        </div>
+
+        <div class="project">
+          <img src="output.png" alt="Project demo">
+          <h3>Sistem Informasi - String</h3>
+          <p>Dokumentasi hasil output materi "STRING" dari mata kuliah Dasar-Dasar Pemrograman dengan bahasa pemrograman C++.</p>
+        </div>
+
+        <div class="project">
+          <img src="insight.jpg" alt="Project demo">
+          <h3>Desain Insight - Studi Islam</h3>
+          <p>Saya dan beberapa teman saya telah membuat desain materi pada proyek insight untuk mata kuliah Studi Islam di Instagram. Here is our Instagram @insight.studiislam</p>
+        </div>
+      </div>
+      <div style="margin-top:10px;color:var(--muted);font-size:13px">Butuh link GitHub atau demo? Ganti teks project dengan URL GitHub / demo live.</div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card contact-grid">
+        <div>
+          <form id="contactForm" onsubmit="return handleSubmit(event)">
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Nama lengkap" required>
+
+            <label for="email" style="margin-top:8px">Email</label>
+            <input id="email" name="email" type="email" placeholder="email@contoh.com" required>
+
+            <label for="message" style="margin-top:8px">Message</label>
+            <textarea id="message" name="message" placeholder="Tulis pesan..." required></textarea>
+
+            <div style="margin-top:10px">
+              <button class="btn" type="submit">Submit</button>
+            </div>
+            <div id="formNote" style="margin-top:8px" class="small-muted">Form ini hanya demo — belum tersambung back-end.</div>
+          </form>
+        </div>
+
+        <aside>
+          <div style="font-weight:700">Info Kontak</div>
+          <div class="small-muted" style="margin-top:8px">Email: <br> nindyanv06@gmail.com</div>
+          <div class="small-muted" style="margin-top:8px">GitHub: <br> github.com/nindyamacelia</div>
+          <div class="small-muted" style="margin-top:8px">LinkedIn: <br> linkedin.com/in/nindya-nova-macelia-145a21318</div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> Nindya Nova Macelia — Dibuat dengan ♥</footer>
+  </div>
+
+  <script>
+    // small interactive bits
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      // demo feedback only
+      const note = document.getElementById('formNote');
+      note.textContent = 'Terima kasih! Pesanmu telah terkirim (demo).';
+      setTimeout(()=> note.textContent = 'Form ini hanya demo — belum tersambung backend.', 3500);
+      e.target.reset();
+      return false;
+    }
+
+    // smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    })
+  </script>
+</body>
+</html>
